@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cup and Bulls Game</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f1f1f1, #e3e3e3);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .container h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .game-instructions {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .start-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .start-btn:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .start-btn:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+
+        .scratch-game iframe {
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .scratch-game iframe:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            width: 100%;
+            font-size: 14px;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .footer-link {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-link:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cup and Bulls - Magic Game</h1>
+</header>
+
+<div class="container">
+    <h2>Get Ready to Play!</h2>
+    <p class="game-instructions">Click on the start button to begin. Follow the magician's instructions and try to find the ball under the cups!</p>
+
+    <button class="start-btn" onclick="scrollToGame()">Start</button>
+
+    <div class="scratch-game">
+        <!-- Scratch Game Embed -->
+        <iframe src="https://scratch.mit.edu/projects/1071299207/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+</div>
+
+<footer>
+    <p>Developed by <a href="https://www.magodilancastaneda.com/" class="footer-link">Mago Dilan Castañeda</a></p>
+</footer>
+
+<script>
+    function scrollToGame() {
+        document.querySelector('.scratch-game').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+
+</html>
