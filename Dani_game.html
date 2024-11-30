@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simulación de Física en GEANT4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #e9ecef;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .container {
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 75%;
+            max-width: 800px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .container h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .game-instructions {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+        }
+
+        .start-btn {
+            display: inline-block;
+            background-color: #2980b9;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .start-btn:hover {
+            background-color: #1abc9c;
+        }
+
+        .scratch-game {
+            margin-top: 20px;
+        }
+
+        .scratch-game video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            max-height: 450px;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 15px;
+            text-align: center;
+            background-color: #34495e;
+            color: #ecf0f1;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .footer-link {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Simulaciones en GEANT4</h1>
+    <!-- Imagen de un ícono de simulación o física -->
+    
+
+
+
+
+</header>
+
+<div class="container">
+    <h2>Experimento de Simulación</h2>
+    <p class="game-instructions">Haz clic en el botón de inicio para ver el video de simulación. Observa los principios físicos en acción y analiza el comportamiento bajo diferentes condiciones experimentales.</p>
+
+    <button class="start-btn" onclick="scrollToGame()">Iniciar Simulación</button>
+
+    <div class="scratch-game">
+        <!-- Video de simulación -->
+        <video controls>
+            <source src="video_geant4.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+</div>
+
+<footer>
+    <p>Desarrollado por <a href="https://github.com/danips390" class="footer-link">Daniel Pereira</a></p>
+</footer>
+
+<script>
+    function scrollToGame() {
+        document.querySelector('.scratch-game').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+
+</html>
