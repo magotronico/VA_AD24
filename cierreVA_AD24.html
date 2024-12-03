@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Scratch Games</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #6a0dad, #b19cd9);
+      color: #fff;
+    }
+
+    /* Cool Title Section */
+    .title-section {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+      background: #8a2be2;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .title-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px #6a0dad;
+    }
+
+    .title-section p {
+      font-size: 1.2rem;
+      color: #f0e6ff;
+    }
+
+    /* Container */
+    .container {
+      max-width: 600px;
+      width: 90%;
+      max-height: 60vh; /* Set max height for scrollable area */
+      overflow-y: auto; /* Enable vertical scroll */
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      color: #333;
+    }
+
+    /* Game Links - Single Column */
+    .game-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    /* Individual Game Card */
+    .game-card {
+      background: #e6d1f2;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Game Card Title */
+    .game-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #6a0dad;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .title-section h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cool Title Section -->
+  <div class="title-section">
+    <h1>Explore My Scratch Creations!</h1>
+    <p>Fun games, challenges, and endless creativity await. Click a game below to start playing!</p>
+  </div>
+
+  <!-- Scrollable Container -->
+  <div class="container">
+    <div class="game-links">
+      <!-- Game Card 1 -->
+      <a href="https://scratch.mit.edu/projects/YOUR_GAME_ID_1" class="game-card" target="_blank">
+        <div class="game-title">Game Title 1</div>
+        <p>Brief description of the game.</p>
+      </a>
+
+      <!-- Game Card 2 -->
+      <a href="https://scratch.mit.edu/projects/YOUR_GAME_ID_2" class="game-card" target="_blank">
+        <div class="game-title">Game Title 2</div>
+        <p>Brief description of the game.</p>
+      </a>
+
+      <!-- Game Card 3 -->
+      <a href="https://scratch.mit.edu/projects/YOUR_GAME_ID_3" class="game-card" target="_blank">
+        <div class="game-title">Game Title 3</div>
+        <p>Brief description of the game.</p>
+      </a>
+
+      <!-- Add more game cards as needed -->
+    </div>
+  </div>
+
+</body>
+</html>
